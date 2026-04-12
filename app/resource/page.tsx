@@ -1,8 +1,13 @@
-export default function AnalyticsPage()
+interface Resource {
+    id: number;
+}
+
+export default function ResourcesPage({id}:Resource)
 {
     return (
         <div>
-            Analytics Page
+            Resources Page
+            {id}
             <div>
                 Main
             </div>
