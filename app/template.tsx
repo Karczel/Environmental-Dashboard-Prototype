@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import MenuSidebar from "@/components/MenuSidebar";
+import MenuSidebar from "@/components/Sidebar/MenuSidebar";
 
 export default function Template({ children }: { children: React.ReactNode }) {
     return (

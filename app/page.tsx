@@ -1,4 +1,4 @@
-import MainDashboard from "@/components/MainDashboard";
+import MainDashboard from "@/components/Main/MainDashboard";
 
 export default function HomePage() {
   return (
