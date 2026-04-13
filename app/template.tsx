@@ -2,9 +2,15 @@ import Header from "@/components/Header";
 
 export default function Template({ children }: { children: React.ReactNode }) {
     return (
-        <div>
+        <div
+            style={{
+                height: '100%'
+            }}>
             <Header />
-            <main>
+            <main
+                style={{
+                    height: 'calc(100vh - 40px)',
+                }}>
                 {children}
             </main>
         </div>

@@ -1,3 +1,5 @@
+import { RiAccountCircleFill, RiArrowLeftLine, RiHome2Fill } from "@remixicon/react";
+
 export default function Header()
 {
     return (
@@ -5,14 +7,25 @@ export default function Header()
         style={{
             display: 'flex',
             width: '100%',
+            height: '40px',
+            alignItems: 'center',
             justifyContent: 'space-between'
         }}>
-            <div>
-                Navigation
+            <div
+            style={{
+                display: 'flex'
+            }}>
+                <RiHome2Fill/>
+                <RiArrowLeftLine/>
             </div>
-            <div>
-                alert
-                profiles
+            <div
+            style={{
+                display: 'flex'
+            }}>
+                <div>
+                    Welcome! Alert
+                </div>
+                <RiAccountCircleFill/>
             </div>
         </div>
     )
