@@ -8,16 +8,17 @@ export default function MainDashboard() {
                 gap: 40
             }}>
             <div
-            style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: 0
-            }}>
-                <a className="link link-hover"
                 style={{
-                    color: 'gray'
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: 0,
+                    paddingTop: 50
                 }}>
+                <a className="link link-hover"
+                    style={{
+                        color: 'gray'
+                    }}>
                     don't know where to start?
                 </a>
                 <label className="input">
@@ -41,11 +42,27 @@ export default function MainDashboard() {
 
             <div className="card bg-base-100 w-96 shadow-sm">
                 <div className="card-body">
-                    <h2 className="card-title">AI Summary</h2>
-                    <p>there alert 1 there alert 2</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Confirm</button>
+                    <div style={{
+                        display: 'flex',
+                        height: '100%',
+                        gap: 10
+                    }}>
+                        <div>
+                            <h2 className="card-title">AI Summary</h2>
+                            <p>there alert 1 there alert 2</p>
+                        </div>
+
+                        <div className="divider divider-horizontal" />
+
+                        <div>
+                            <h2 className="card-title">Todo</h2>
+                            <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Confirm</button>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
             </div>
             <div
@@ -102,6 +119,22 @@ export default function MainDashboard() {
                         <img
                             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                             alt="Shoes" />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title">Card Title</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        {/* <div className="card-actions justify-end">
+                        <button className="btn btn-primary">Buy Now</button>
+                    </div> */}
+                    </div>
+                </div>
+                <div className="card bg-base-100 w-96 shadow-sm">
+                    <figure
+                        style={{
+                            width: '100%',
+                            height: 200
+                        }}>
+                        +
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">Card Title</h2>

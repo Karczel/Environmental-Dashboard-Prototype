@@ -10,6 +10,7 @@ export default function MenuSidebar() {
                 backgroundColor: 'gainsboro',
                 textAlign: 'center',
                 alignItems: 'center',
+                maxWidth: 400,
                 padding: 20,
                 justifyContent: 'space-between',
                 fontSize: 24

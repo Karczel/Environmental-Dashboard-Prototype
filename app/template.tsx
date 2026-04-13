@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import MenuSidebar from "@/components/MenuSidebar";
 
 export default function Template({ children }: { children: React.ReactNode }) {
     return (
@@ -10,7 +11,10 @@ export default function Template({ children }: { children: React.ReactNode }) {
             <main
                 style={{
                     height: 'calc(100vh - 40px)',
+                    display: 'flex',
+                    gap: 5,
                 }}>
+                <MenuSidebar />
                 {children}
             </main>
         </div>
