@@ -2,22 +2,20 @@
 
 import AnalyticsCustomizer from '@/components/Analytics/AnalyticsCustomizer';
 import AnalyticsMain from '@/components/Analytics/AnalyticsMain';
-import { useParams } from 'next/navigation';
+// import { useParams } from 'next/navigation';
 
 export default function AnalyticsPage() {
-    const params = useParams();
-    const id = params.analytics_id as string;
+    // const params = useParams();
+    // const id = params.analytics_id as string;
 
     return (
-        <div>
-            Analytics Page {id}
-            <div>
-                Main
-            </div>
+        <div
+        style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            width: '100%'
+        }}>
             <AnalyticsMain/>
-            <div>
-                Customizer
-            </div>
             <AnalyticsCustomizer/>
         </div>
     )

@@ -5,18 +5,16 @@ export default function Header()
     return (
         <div
         style={{
-            display: 'flex',
             width: '100%',
+            display: 'flex',
             height: '40px',
             alignItems: 'center',
             justifyContent: 'space-between',
-            backgroundColor: 'gainsboro'
         }}>
             <div
             style={{
                 display: 'flex'
             }}>
-                <RiMenu2Line/>
                 <RiArrowLeftLine/>
             </div>
             <div
