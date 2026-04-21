@@ -1,5 +1,5 @@
 import { RiEditLine } from "@remixicon/react";
-import LegendEffectOpacity from "../Charts/HistoryChart";
+import MyLineChart from "../Charts/LineChart";
 
 export default function AnalyticsMain() {
     return (
@@ -16,7 +16,7 @@ export default function AnalyticsMain() {
                 Name
                 <RiEditLine />
             </div>
-<LegendEffectOpacity/>
+            <MyLineChart />
             <div
                 style={{
                     fontSize: '20px'
@@ -61,12 +61,12 @@ export default function AnalyticsMain() {
                         +
                     </button>
                 </div>
-                    <fieldset className="fieldset">
-                        <legend className="fieldset-legend">
-                            Note
-                        </legend>
-                        <textarea className="textarea h-24" placeholder="Bio"/>
-                    </fieldset>
+                <fieldset className="fieldset">
+                    <legend className="fieldset-legend">
+                        Note
+                    </legend>
+                    <textarea className="textarea h-24" placeholder="Bio" />
+                </fieldset>
             </div>
         </div>
     )

@@ -48,7 +48,7 @@ const data = [
 ];
 
 // #endregion
-const LegendEffectOpacity = () => {
+const MyLineChart = () => {
     const [hoveringDataKey, setHoveringDataKey] = React.useState<DataKey<any> | undefined>(undefined);
 
     let pvOpacity = 1;
@@ -95,4 +95,4 @@ const LegendEffectOpacity = () => {
     );
 };
 
-export default LegendEffectOpacity;
+export default MyLineChart;
