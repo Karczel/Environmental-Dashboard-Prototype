@@ -1,6 +1,15 @@
+import { chartTypes } from "@/public/mockup_data/chartTypes";
 import MediaBlock from "../MediaBlock";
 
-export default function ChartTypes() {
+interface ChartTypesProps {
+    setChartTypeId: (id: number) => void;
+}
+
+export default function ChartTypes({ setChartTypeId }: ChartTypesProps) {
+    const onSelectChartType = (chartType_id: number) => {
+        setChartTypeId(chartType_id)
+    }
+
     return (
         <div
             style={{
@@ -8,34 +17,16 @@ export default function ChartTypes() {
                 gap: 10,
                 flexWrap: 'wrap'
             }}>
-            <div
+                {chartTypes.map((chartType, index) => (
+                    // Wrap in arrow function so it's called on click, not on render
+                    <button onClick={() => onSelectChartType(chartType.id)}
                 style={{
                     height: 100,
                     width: 100
-                }}>
-                <MediaBlock url="/ChartsIcon/BarChart.png" objectFit="cover" />
-            </div>
-            <div
-                style={{
-                    height: 100,
-                    width: 100
-                }}>
-                <MediaBlock url="/ChartsIcon/LineChart.png" objectFit="cover" />
-            </div>
-            <div
-                style={{
-                    height: 100,
-                    width: 100
-                }}>
-                <MediaBlock url="/ChartsIcon/PieChart.png" objectFit="cover" />
-            </div>
-            <div
-                style={{
-                    height: 100,
-                    width: 100
-                }}>
-                <MediaBlock url="/ChartsIcon/ScatterChart.png" objectFit="cover" />
-            </div>
+                }} key={index}>
+                <MediaBlock url={`/ChartsIcon/${chartType.iconURL}`} objectFit="cover" />
+            </button>
+                ))}
         </div>
     )
 }

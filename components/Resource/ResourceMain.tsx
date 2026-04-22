@@ -1,6 +1,7 @@
 import { RiEditLine } from "@remixicon/react";
 import UnitInfo from "./UnitInfo";
 import ResourceCircles from "./WaterTankChart";
+import EditState from "../IconState/EditState";
 
 export default function ResourceMain() {
     return (
@@ -20,7 +21,7 @@ export default function ResourceMain() {
                     gap: 10,
                     alignItems: 'center'
                 }}>
-                Resource <RiEditLine size={40} />
+                Resource <EditState/>
             </div>
             <ResourceCircles />
             <div

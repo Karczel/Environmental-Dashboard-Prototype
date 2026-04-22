@@ -1,7 +1,11 @@
 import ChartTypes from "./ChartTypes";
 import CustomizeChartAttr from "./CustomizeChartAttr";
 
-export default function AnalyticsCustomizer() {
+interface AnalyticsCustomizerProps {
+    setcharttype: (id: number) => void;
+}
+
+export default function AnalyticsCustomizer({ setcharttype }: AnalyticsCustomizerProps) {
     return (
         <div
             style={{
@@ -19,7 +23,8 @@ export default function AnalyticsCustomizer() {
                 <input type="radio" name="my-accordion-1" defaultChecked />
                 <div className="collapse-title font-semibold">Chart Types</div>
                 <div className="collapse-content text-sm">
-                    <ChartTypes />
+                    {/* Pass setcharttype down so ChartTypes can trigger chart changes */}
+                    <ChartTypes setChartTypeId={setcharttype} />
                 </div>
             </div>
         </div>
