@@ -3,7 +3,7 @@
 import { RiArrowLeftLine } from '@remixicon/react';
 import { useRouter } from 'next/navigation';
 
-export default function BackButton() {
+export default function GoBackButton() {
     const router = useRouter();
 
     const goBack = () => {
