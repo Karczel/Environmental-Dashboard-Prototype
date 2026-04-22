@@ -1,3 +1,5 @@
+import DashboardCard from "./DashboardCard";
+
 export default function MainDashboard() {
     return (
         <div
@@ -49,13 +51,26 @@ export default function MainDashboard() {
                     }}>
                         <div>
                             <h2 className="card-title">AI Summary</h2>
-                            <p>there alert 1 there alert 2</p>
+                            <div className="p-4 max-w-md">
+                                <p className="font-medium mb-2">What happened when you went offline:</p>
+                                <ul className="list-disc pl-5 space-y-1 marker:text-gray-500">
+                                    <li>Alerts: there alert 1, there alert 2</li>
+                                    <li>n warnings during 12-3-4 18:00:00 and 13-3-4 06:00:00</li>
+                                    <li>Threshold auto action triggered n times</li>
+                                    <li className="text-green-600">Currently: All resources Stable</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div className="divider divider-horizontal" />
 
                         <div>
                             <h2 className="card-title">Todo</h2>
+                            <ul>
+                                <li>Step 1:Collect History Analytics</li>
+                                <li>Step 2:Summarize Analytics</li>
+                                <li>Step 3:Make Report</li>
+                            </ul>
                             <div className="card-actions justify-end">
                                 <button className="btn btn-primary">Confirm</button>
                             </div>
@@ -72,62 +87,9 @@ export default function MainDashboard() {
                     gap: 20,
                     justifyContent: 'center'
                 }}>
-                <div className="card bg-base-100 w-96 shadow-sm">
-                    <figure>
-                        <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                        {/* <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div> */}
-                    </div>
-                </div>
-                <div className="card bg-base-100 w-96 shadow-sm">
-                    <figure>
-                        <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                        {/* <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div> */}
-                    </div>
-                </div>
-                <div className="card bg-base-100 w-96 shadow-sm">
-                    <figure>
-                        <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                        {/* <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div> */}
-                    </div>
-                </div>
-                <div className="card bg-base-100 w-96 shadow-sm">
-                    <figure>
-                        <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                        {/* <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div> */}
-                    </div>
-                </div>
+                <DashboardCard url="/ChartsIcon/LineChart.png" name="Analytics 1" href="/analytics/1" />
+                <DashboardCard url="/ResourcesIcon/WaterTank.png" name="Resources 1" href="/resource/1" />
+
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure
                         style={{
@@ -137,8 +99,7 @@ export default function MainDashboard() {
                         +
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h2 className="card-title">Add Dashboard</h2>
                         {/* <div className="card-actions justify-end">
                         <button className="btn btn-primary">Buy Now</button>
                     </div> */}

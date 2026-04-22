@@ -2,6 +2,7 @@ import { RiDashboardFill, RiHome2Fill, RiMenuLine, RiPushpinLine, RiQuestionLine
 import Link from "next/link";
 import Header from "@/components/Header";
 import { ReactNode } from "react";
+import PinState from "./PinState";
 
 export default function MenuSidebar({ children }: { children: ReactNode }) {
     return (
@@ -89,13 +90,13 @@ export default function MenuSidebar({ children }: { children: ReactNode }) {
                                         style={{
                                             display: 'flex'
                                         }}>
-                                        <RiPushpinLine /> Recent
+                                        <PinState/> Recent
                                     </div>
                                     <div
                                         style={{
                                             display: 'flex'
                                         }}>
-                                        <RiUnpinFill /> Water Tanks
+                                        <PinState/> Water Tanks
                                     </div>
                                 </div>
                             </div>

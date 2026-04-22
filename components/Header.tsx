@@ -15,10 +15,11 @@ export default function Header()
             <GoBackButton/>
             <div
             style={{
-                display: 'flex'
+                display: 'flex',
+                gap: 5
             }}>
                 <div>
-                    Welcome! Alert
+                    Welcome! Alert Goes Here
                 </div>
                 <RiAccountCircleFill/>
             </div>
