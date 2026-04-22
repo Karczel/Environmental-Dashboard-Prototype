@@ -9,7 +9,8 @@ export default function ResourceMain() {
                 display: 'flex',
                 width: '100%',
                 flexDirection: 'column',
-                padding: 50,
+                padding: 25,
+                paddingLeft: 50,
                 gap: 15
             }}>
             <div
