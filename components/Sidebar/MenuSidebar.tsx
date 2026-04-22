@@ -1,10 +1,11 @@
-import { RiDashboardFill, RiHome2Fill, RiMenuLine, RiPushpinFill, RiPushpinLine, RiQuestionLine, RiSettings3Fill, RiUnpinFill } from "@remixicon/react";
+import { RiDashboardFill, RiHome2Fill, RiMenuLine, RiPushpinLine, RiQuestionLine, RiSettings3Fill, RiUnpinFill } from "@remixicon/react";
 import Link from "next/link";
 import Header from "@/components/Header";
+import { ReactNode } from "react";
 
 export default function MenuSidebar({ children }: { children: ReactNode }) {
     return (
-        <div className="drawer lg:drawer-open">
+        <div className="drawer lg:drawer-open h-100">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
                 {/* Navbar */}
@@ -16,7 +17,8 @@ export default function MenuSidebar({ children }: { children: ReactNode }) {
                     <Header />
                 </nav>
                 {/* Page content here */}
-                {children}
+                    {children}
+
             </div>
 
             <div className="drawer-side is-drawer-close:overflow-visible">
@@ -39,8 +41,8 @@ export default function MenuSidebar({ children }: { children: ReactNode }) {
                                 flexDirection: 'column',
                                 alignItems: 'center'
                             }}>
-                            <Link href="/" className="btn btn-outline is-drawer-close:tooltip is-drawer-close:tooltip-right is-drawer-open:h-25" 
-                            data-tip="Homepage"
+                            <Link href="/" className="btn btn-outline is-drawer-close:tooltip is-drawer-close:tooltip-right is-drawer-open:h-25"
+                                data-tip="Homepage"
                                 style={{
                                     width: '100%',
                                     display: 'flex',
