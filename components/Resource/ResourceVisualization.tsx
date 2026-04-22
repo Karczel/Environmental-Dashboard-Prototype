@@ -1,7 +1,7 @@
 export default function ResourceVisualization() {
     return (
         <div>
-            ResourceVisualization
+            ResourceVisualization                                                                                                                                                                                                                                                                                                                                                                                                                             
         </div>
     )
 }

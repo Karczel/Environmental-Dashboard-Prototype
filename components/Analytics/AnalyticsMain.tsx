@@ -2,24 +2,29 @@ import { RiEditLine } from "@remixicon/react";
 import MyLineChart from "../Charts/LineChart";
 
 export default function AnalyticsMain() {
+
     return (
         <div
             style={{
                 display: 'flex',
                 width: '100%',
-                flexDirection: 'column'
+                flexDirection: 'column',
+                padding: 50,
+                gap: 15
             }}>
             <div
                 style={{
-                    display: 'flex'
+                    display: 'flex',
+                    fontSize: 40,
+                    gap: 10,
+                    alignItems: 'center'
                 }}>
-                Name
-                <RiEditLine />
+                Name <RiEditLine size={40} />
             </div>
             <MyLineChart />
             <div
                 style={{
-                    fontSize: '20px'
+                    fontSize: 24
                 }}>
                 Chart Settings
             </div>
