@@ -1,6 +1,7 @@
 import { RiEditLine } from "@remixicon/react";
 import MyLineChart from "../Charts/LineChart";
 import React from "react";
+import EditState from "../IconState/EditState";
 
 interface AnalyticsMainProps {
     chartTypeNode: React.ReactNode;
@@ -25,7 +26,7 @@ export default function AnalyticsMain({chartTypeNode}:AnalyticsMainProps) {
                     gap: 10,
                     alignItems: 'center'
                 }}>
-                Name <RiEditLine size={40} />
+                Name <EditState/>
             </div>
             {chartTypeNode}
             <div

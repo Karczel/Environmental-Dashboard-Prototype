@@ -2,7 +2,7 @@ import { RiDashboardFill, RiHome2Fill, RiMenuLine, RiPushpinLine, RiQuestionLine
 import Link from "next/link";
 import Header from "@/components/Header";
 import { ReactNode } from "react";
-import PinState from "./PinState";
+import PinState from "../IconState/PinState";
 
 export default function MenuSidebar({ children }: { children: ReactNode }) {
     return (
