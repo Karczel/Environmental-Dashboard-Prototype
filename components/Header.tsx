@@ -1,4 +1,5 @@
 import { RiAccountCircleFill, RiArrowLeftLine, RiHome2Fill, RiMenu2Line } from "@remixicon/react";
+import GoBackButton from "./GoBackButton";
 
 export default function Header()
 {
@@ -11,12 +12,7 @@ export default function Header()
             alignItems: 'center',
             justifyContent: 'space-between',
         }}>
-            <div
-            style={{
-                display: 'flex'
-            }}>
-                <RiArrowLeftLine/>
-            </div>
+            <GoBackButton/>
             <div
             style={{
                 display: 'flex'
