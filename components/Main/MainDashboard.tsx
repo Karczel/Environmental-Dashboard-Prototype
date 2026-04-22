@@ -42,7 +42,7 @@ export default function MainDashboard() {
                 </label>
             </div>
 
-            <div className="card bg-base-100 w-96 shadow-sm">
+            <div className="card bg-base-100 w-200 shadow-sm">
                 <div className="card-body">
                     <div style={{
                         display: 'flex',

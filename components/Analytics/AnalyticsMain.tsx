@@ -29,14 +29,19 @@ export default function AnalyticsMain() {
                 Chart Settings
             </div>
             <div>
-                <div>
+                <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column'
+                }}>
                     <label className="input">
                         <span className="label">value</span>
-                        <input type="text" placeholder="URL" />
+                        <input type="text" placeholder="0" />
                     </label>
+
                     <label className="input">
                         <span className="label">threshold</span>
-                        <input type="text" placeholder="URL" />
+                        <input type="text" placeholder="0" />
                     </label>
                 </div>
                 <div>
