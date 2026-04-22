@@ -1,5 +1,6 @@
 import Link from "next/link";
 import MediaBlock from "../MediaBlock";
+import { RiPushpinFill } from "@remixicon/react";
 
 interface DashboardCardProps {
     url: string;
@@ -13,6 +14,8 @@ export default function DashboardCard(
 
     return (
         <Link href={href} className="card bg-base-100 w-96 shadow-sm">
+            
+            <RiPushpinFill style={{display: 'flex', alignSelf: 'end' }}/>
             <figure>
                 <div
                     style={{
@@ -25,13 +28,13 @@ export default function DashboardCard(
                         url={url} alt={name}
                         objectFit="contain" />
                 </div>
-
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
                 {/* <div className="card-actions justify-end">
                             <button className="btn btn-primary">Buy Now</button>
                         </div> */}
+                        
             </div>
         </Link>
     )
